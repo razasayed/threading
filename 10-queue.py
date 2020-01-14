@@ -8,7 +8,7 @@ import queue
 
 class Pipeline(queue.Queue):
     def __init__(self):
-        super().__init__(maxsize=10)
+        super().__init__(maxsize=20)
 
     def put_message(self, message):
         print(f'producing message: {message}')
